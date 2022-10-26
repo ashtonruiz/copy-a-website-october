@@ -1,30 +1,16 @@
-:root {
-    --background: rgb(253, 253, 253);
-    --header-background: lightgrey;
-    --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
-        'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
-}
-
 body {
-    font-family: var(--primary-font);
-    background: var(--background);
+    font-family: sans-serif;
+    background-color: white;
 }
 
 header {
-    position: sticky;
-    top: 0;
-    padding: 15px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background-color: var(--header-background);
+    background-color: lightgray;
+    height: 30px;
+    width: 1fr;
 }
 
 main {
-    padding: 20px;
-    grid-template-rows: 190px 760px 1fr;
-    display: flex;
+    grid-template-rows: 190px 1000px 1fr;
 }
 
 h1 {
@@ -35,5 +21,22 @@ h1 {
 }
 
 .search-bar {
-    size: 20px 60px;
+    position: absolute;
+    top: 355px;
+    left: 575px;
+    height: 2em;
+    width: 70%;
+    padding: 0 3px 0 8px;
+}
+
+.navigation-selector {
+    padding: 5px;
+}
+
+.county-selector {
+    padding: 5px;
+}
+
+.community-selector {
+    padding: 5px;
 }
