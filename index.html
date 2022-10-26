@@ -25,19 +25,57 @@
     <body>
         <header>
             <h1>CL</h1>
-                <nav class="navigation-selector">
-                    <select id="location-dropdown">
-                        <option value="Portland">Portland</option>
-                        <option value="Bellingham">Bellingham</option>
-                        <option value="Bend">Bend</option>     
-                </nav>   
+            <div> 
+            <nav class="navigation-selector">
+                <select id="location-dropdown">
+                    <option value="Portland">Portland</option>
+                    <option value="Bellingham">Bellingham</option>
+                    <option value="Bend">Bend</option>   
+                </nav>
+            </div>
+
+            <div>
+                <nav class="county-selector">
+                    <select id="county-dropdown">
+                        <option value="All Portland">All Portland</option>
+                        <option value="Washington Co">Washington Co</option>
+                        <option value="Multonomah Co">Multnomah Co</option>
+                </nav>
+            </div> 
+
+            <div>
+                <nav class="community-selector">
+                    <select id="community-dropdown">
+                        <option value="community">community</option>
+                        <option value="for sale">for sale</option>
+                        <option value="events">events</option>
+                    </nav>
+            </div>
         </header>  
     
         
     <main>
         <section class="search-function">
-            <input id="search-bar" placeholder="search missed connections">
-            <button id="search-btn">Search</button>
+            <input type="search" id="search-bar" placeholder="search missed connections">
+        </section>
+
+        <section class="filter-options">
+            <input type="checkbox" id="search-titles">
+            <label for="search-titles">search titles only</label>
+            <input type="checkbox" id="has-image">
+            <label for="has-image">has image</label>
+            <input type="checkbox" id="posted-today">
+            <label for="posted-today">posted today</label>
+            <input type="checkbox" id="bundle-duplicates">
+            <label for="bundle-duplicates">bundle duplicates</label>
+            <input type="checkbox" id="include-nearby">
+            <label for="include-nearby">include nearby areas</label>
+        </section>
+
+        <section class="zip-code">
+            <input type="number" id="miles" placeholder="miles">
+            <input type="number" id="zip" placeholder="from zip">
+            <button type="submit" value="submit">Search</button> 
         </section>
     </main>
 
