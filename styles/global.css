@@ -8,8 +8,6 @@
 body {
     font-family: var(--primary-font);
     background: var(--background);
-    display: grid;
-    grid-template-rows: auto 1fr;
 }
 
 header {
@@ -17,17 +15,16 @@ header {
     top: 0;
     padding: 15px;
     height: 40px;
-
     display: flex;
     align-items: center;
     gap: 10px;
-
     background-color: var(--header-background);
 }
 
 main {
     padding: 20px;
     grid-template-rows: 190px 760px 1fr;
+    display: flex;
 }
 
 h1 {
@@ -35,4 +32,8 @@ h1 {
     font: 'sans-serif';
     color: purple;
     margin: 3px 5px 0px;
+}
+
+.search-bar {
+    size: 20px 60px;
 }
