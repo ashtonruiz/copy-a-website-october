@@ -9,6 +9,13 @@ header {
     width: 1fr;
 }
 
+.selectors {
+    grid-template-rows: auto;
+    display: flex;
+    gap: 10px;
+    margin-left: 35px;
+}
+
 main {
     grid-template-rows: 190px 1000px 1fr;
 }
@@ -20,23 +27,23 @@ h1 {
     margin: 3px 5px 0px;
 }
 
-.search-bar {
+.search-function {
     position: absolute;
-    top: 355px;
+    top: 200px;
     left: 575px;
-    height: 2em;
-    width: 70%;
     padding: 0 3px 0 8px;
 }
 
-.navigation-selector {
-    padding: 5px;
+.filter-options {
+    display: flex;
+    margin: 25px;
+    grid-template-rows: auto;
 }
 
-.county-selector {
-    padding: 5px;
+.search-bar {
+    height: 100px;
 }
 
-.community-selector {
-    padding: 5px;
+.button {
+    height: 100px;
 }

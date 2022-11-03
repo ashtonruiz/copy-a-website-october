@@ -19,67 +19,63 @@
         <link rel="stylesheet" href="styles/reset.css" />
         <link rel="stylesheet" href="styles/global.css" />
         <!-- add link for page specific css -->
-
     </head>
 
     <body>
         <header>
             <h1>CL</h1>
-            <div> 
-            <nav class="navigation-selector">
-                <select id="location-dropdown">
-                    <option value="Portland">Portland</option>
-                    <option value="Bellingham">Bellingham</option>
-                    <option value="Bend">Bend</option>   
-                </nav>
-            </div>
-
-            <div>
-            <nav class="county-selector">
-                <select id="county-dropdown">
-                    <option value="all-portland">All Portland</option>
-                    <option value="washington-co">Washington Co</option>
-                    <option value="multnomah-co">Multnomah Co</option>
-                </nav>
-            </div> 
-
-            <div>
-            <nav class="community-selector">
-                <select id="community-dropdown">
-                    <option value="community">community</option>
-                    <option value="for sale">for sale</option>
-                    <option value="events">events</option>
-                </nav>
-            </div>
-        </header>  
-    
-        
-    <main>
-        <section class="search-function">
-            <input type="search" id="search-bar" placeholder="search missed connections">
-            <button type="submit-btn">search</button>
-        </section>
-
-        <section class="filter-options">
-            <input type="checkbox" id="search-titles">
-            <label for="search-titles">search titles only</label>
-            <input type="checkbox" id="has-image">
-            <label for="has-image">has image</label>
-            <input type="checkbox" id="posted-today">
-            <label for="posted-today">posted today</label>
-            <input type="checkbox" id="bundle-duplicates">
-            <label for="bundle-duplicates">bundle duplicates</label>
-            <input type="checkbox" id="include-nearby">
-            <label for="include-nearby">include nearby areas</label>
-        </section>
-
-        <section class="zip-code">
-            <input type="number" id="miles" placeholder="miles">
-            <input type="number" id="zip" placeholder="from zip">
-            <button type="submit" value="submit">search</button> 
-        </section>
-    </main>
-
+            <section class="selectors">
+                <div>
+                    <label class="navigation-selector">
+                        <select id="location-dropdown">
+                            <option value="Portland">Portland</option>
+                            <option value="Bellingham">Bellingham</option>
+                            <option value="Bend">Bend</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label class="county-selector">
+                        <select id="county-dropdown">
+                            <option value="all-portland">All Portland</option>
+                            <option value="washington-co">Washington Co</option>
+                            <option value="multnomah-co">Multnomah Co</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label class="community-selector">
+                        <select id="community-dropdown">
+                            <option value="community">community</option>
+                            <option value="for sale">for sale</option>
+                            <option value="events">events</option>
+                        </select>
+                    </label>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="search-function">
+                <input type="search" id="search-bar" placeholder="search missed connections" />
+                <button type="submit" id="submit-btn">search</button>
+            </section>
+            <section class="filter-options">
+                <input type="checkbox" id="search-titles" />
+                <label for="search-titles">search titles only</label>
+                <input type="checkbox" id="has-image" />
+                <label for="has-image">has image</label>
+                <input type="checkbox" id="posted-today" />
+                <label for="posted-today">posted today</label>
+                <input type="checkbox" id="bundle-duplicates" />
+                <label for="bundle-duplicates">bundle duplicates</label>
+                <input type="checkbox" id="include-nearby" />
+                <label for="include-nearby">include nearby areas</label>
+            </section>
+            <section class="zip-code">
+                <input type="number" id="miles" placeholder="miles" />
+                <input type="number" id="zip" placeholder="from zip" />
+                <button type="submit" id="submit">search</button>
+            </section>
+        </main>
     </body>
-
 </html>
